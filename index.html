@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			background changer
+		</title>
+	</head>
+	
+	<body style = "text-align:center;">
+		
+		<h1 style = "color:lightcoral;" >
+			Grichie
+		</h1>
+		
+		<p id = "gr_up" style =
+			"font-size: 16px; font-weight: bold;">	
+		</p>
+		
+		<button onclick = "gr_Run()">
+			Click here
+		</button>
+		
+		<p id = "gr_down" style =
+			"color:lightcoral; font-size: 20px; font-weight: bold;">
+		</p>
+		
+		<script>
+			let p= document.getElementById("gr_up");
+			let q = document.getElementById("gr_down");
+			let r = "Click on button to change the background color";
+		
+			p.innerHTML = r;
+		
+			function changeColor(color) {
+				document.body.style.background = color;
+			}
+			
+			function gr_Run() {
+				changeColor('blue');
+				p.innerHTML = "Background Color changed";
+			}		
+		</script>
+	</body>
+</html>					
